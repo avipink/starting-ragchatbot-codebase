@@ -18,7 +18,7 @@ cd backend && uv run uvicorn app:app --reload --port 8000
 
 Requires a `.env` file in the repo root with `ANTHROPIC_API_KEY=...`.
 
-**Always use `uv` to run commands. Do not use `pip` directly.** All Python commands should be prefixed with `uv run`.
+**Always use `uv` to manage dependencies and run commands. Never use `pip` directly.** Use `uv add <package>` to add dependencies, `uv remove <package>` to remove them, and prefix all Python commands with `uv run`.
 
 There are no tests or linting configured in this project.
 
